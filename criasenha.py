@@ -7,7 +7,11 @@ def gerador(tamanho=8, caracteres=string.ascii_letters + string.digits):
 
 usuarios = open('lista.txt')
 
+senhas = open('senhas_geradas.txt', 'w')
 
 for usuario in usuarios:
-    print(usuario, gerador(), '\n')
+    senha = gerador()
+    print(usuario, senha, '\n')
+    senhas.writelines(usuario + ' - ' + senha + '\n')
 
+senhas.close()
