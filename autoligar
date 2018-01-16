@@ -1,0 +1,17 @@
+#!/bin/bash
+echo Configurando todas as maquinas virtuais para iniciar automaticamente VMs
+VMLIST=`xe vm-list | grep "uuid ( RO) " | awk '{print $5}'`
+POOLLIST=`xe pool-list |grep "uuid ( RO)" |awk '{print $5}'`
+for VM in $VMLIST
+do
+	echo Configurando auto_poweron=true na VM com UUID $VM
+	xe vm-param-set uuid=$VM other-config:auto_poweron=true
+done
+
+for POOL in $POOLLIST
+
+do
+	echo Configurando auto_poweron=true no POOL com UUID $POOL
+	xe pool-param-set uuid=$POOL other-config:auto_poweron=true
+done
+echo Alterações finalizadas
