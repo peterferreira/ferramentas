@@ -12,6 +12,6 @@ senhas = open('senhas_geradas.txt', 'w')
 for usuario in usuarios:
     senha = gerador()
     print(usuario, senha, '\n')
-    senhas.writelines(usuario + ' - ' + senha + '\n')
+    senhas.writelines(usuario[:-1] + ' - ' + senha + '\n')
 
 senhas.close()
