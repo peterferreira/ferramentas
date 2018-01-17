@@ -6,12 +6,10 @@ Ferramentas de uso geral no trabalho como analista de suporte linux / General to
 
 *autoligar.sh*: Script para ativar e desativar o auto start das VMs selecionadas
 
-Modo de usar: ./autoligar.sh NomeDaVM True para ativar
 
+Modo de usar: ./autoligar.sh NomeDaVM True para ativar
           ou: sh autoligar.sh NomeDaVM True
-          
             : ./autoligar.sh NomeDaVM False para desativar
-            
           ou: sh autoligar.sh NomeDaVM False
           
 
@@ -24,12 +22,11 @@ Modo de usar: Editar o script para indicar o local de montagem do dispositivo de
 
 *criarsenha.py*: Script para gerar senhas
 
-Modo de usar: Editar o arquivo lista.txt e alterar os nomes dos usuários
-
+Modo de usar: 
+              Editar o arquivo lista.txt e alterar os nomes dos usuários
               logo após, executar: ./criarsenha.py ou python criarsenha.py
-              
               sera criado um arquivo senhas_geradas.txt com a lista de senhas, além de apresentá-las na tela
-              
+
 
 *lista.txt*: Arquivo em texto plano, onde devem estar os nomes dos usuários para geração de senha.
 
