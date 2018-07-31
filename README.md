@@ -47,3 +47,13 @@ sera criado um arquivo senhas_geradas.txt com a lista de senhas, além de aprese
 ```
     ./testavelocidade.sh
 ou: sh testavelocidade.sh
+```
+
+## Mapear porta LPT para impressora compartilhada.
+
+**impressrora_gomes.bat**: Inicialmente escrito para a Gomes, pode ser usado para qualquer cliente com cenário semelhante, quando for necessário imprimir direto para uma porta LPT.
+
+1. Modo de usar:
+```
+   impressora_gomes.bat
+```
